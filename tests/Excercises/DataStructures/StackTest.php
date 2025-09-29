@@ -11,7 +11,7 @@ use Jknight\PhpExcercises\DataStructures\Stack;
 class StackTest extends TestCase
 {
     #[DataProvider('dataProviderForStack')]
-    public function testStack(StackInterface $stack)
+    public function testStack(StackInterface $stack): void
     {
         $stack->push('a1');
         $stack->push('a2');
