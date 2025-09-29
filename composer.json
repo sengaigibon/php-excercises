@@ -1,0 +1,23 @@
+{
+    "name": "jknight/php-excercises",
+    "type": "library",
+    "require": {
+        "phpunit/phpunit": "^12.3",
+        "php": "^8.4"
+    },
+    "require-dev": {
+        "php": "^8.4",
+        "phpunit/phpunit": "^12.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jknight\\PhpExcercises\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Javier Knight",
+            "email": "jrcaballerob@gmail.com"
+        }
+    ]
+}

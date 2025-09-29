@@ -1,0 +1,25 @@
+# Composer dependencies
+/vendor/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# PHPStorm project files
+.idea/
+
+# Log files
+*.log
+
+# Environment files
+.env
+.env.*
+
+# PHPUnit
+.phpunit.result.cache
+
+# Coverage reports
+coverage/
+
+# Composer PHAR
+composer.phar
