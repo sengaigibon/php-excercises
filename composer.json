@@ -6,12 +6,15 @@
         "php": "^8.4"
     },
     "require-dev": {
-        "php": "^8.4",
-        "phpunit/phpunit": "^12.3"
     },
     "autoload": {
         "psr-4": {
             "Jknight\\PhpExcercises\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
         }
     },
     "authors": [
