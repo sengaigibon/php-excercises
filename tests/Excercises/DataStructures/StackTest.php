@@ -2,15 +2,17 @@
 
 namespace Excercises\DataStructures;
 
+use Jknight\PhpExcercises\Base\StackInterface;
+use Jknight\PhpExcercises\DataStructures\StackAsArray;
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 use Jknight\PhpExcercises\DataStructures\Stack;
 
 class StackTest extends TestCase
 {
-    public function testStack()
+    #[DataProvider('dataProviderForStack')]
+    public function testStack(StackInterface $stack)
     {
-        $stack = new Stack();
-
         $stack->push('a1');
         $stack->push('a2');
         $stack->push('a3');
@@ -31,5 +33,12 @@ class StackTest extends TestCase
         $this->assertEquals(null, $stack->peek());
 
     }
+
+    public static function dataProviderForStack(): \Generator
+    {
+        yield [new Stack()];
+        yield [new StackAsArray()];
+    }
+
 }
 
